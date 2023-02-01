@@ -1,12 +1,12 @@
 {
-  "name": "docu-notion-sample-site",
-  "version": "0.0.0",
+  "name": "flex-doc2",
+  "version": "0.0.1",
   "private": false,
   "scripts": {
-    "pull-test-tagged": "cross-var npx docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/ --status-tag test",
-    "pull:latest": "cross-var npx docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
+    "pull-test-tagged": "cross-var npx docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $FLEX_NOTION_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/ --status-tag test",
+    "pull:latest": "cross-var npx docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $FLEX_NOTION_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
     "//pull": "This uses the specific version of docu-notion in yarn.lock, not necessarily the latest",
-    "pull": "cross-var yarn docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
+    "pull": "cross-var yarn docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $FLEX_NOTION_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "deploy": "docusaurus deploy",
@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@docusaurus/core": "^2.2.0",
-    "@docusaurus/preset-classic": "^2.2.0",
+    "@docusaurus/preset-classic": "^2.3.0",
     "@easyops-cn/docusaurus-search-local": "^0.33.6",
     "@mdx-js/react": "^1",
     "clsx": "^1.2.1",
