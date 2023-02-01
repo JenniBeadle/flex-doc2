@@ -17,7 +17,6 @@ const config = {
   organizationName: "JenniBeadle", // Usually your GitHub org/user name.
   projectName: "flex-doc2", // Usually your repo name.
   deploymentBranch: "gh-pages",
-  trailingSlash: true,
   
   presets: [
     [
